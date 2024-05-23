@@ -1,0 +1,174 @@
+
+@font-face {
+   src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+   font-family:Grotesk;
+}
+@font-face {
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
+    font-family:Grotesk-bold;
+ }
+ @font-face {
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+    font-family:Grotesk-medium;
+ }
+ @font-face {
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    font-family:Grotesk-extraBold;
+ }
+
+.container{
+    margin-left:1.5rem;
+}
+.blue-card{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width:15rem;
+    height: 100%;
+    border-radius:1.5rem;
+    font-family: Grotesk;
+    text-align: center;
+    padding: 1.6rem;
+    position: relative;
+    z-index: 100;
+    
+}
+.result{
+   font-size: 1.3rem;
+   margin-bottom: 1.5rem;
+}
+
+.score{
+    width:8rem;
+    height:8rem;
+    text-align: center;
+    font-family: Grotesk-extraBold;
+    padding: 0.8rem;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius:100%;
+    position:relative;
+    left:3rem;
+    
+}
+.score h1{
+    font-size:3rem;
+    color:hsl(0, 0%, 100%);
+    position: relative;
+    bottom:1.5rem;
+  
+   
+}
+.score p{
+    font-size:0.8rem;
+    position: relative;
+    bottom:4.4rem;
+}
+
+.score p,.content p,.blue-card p{
+    color:hsl(241, 100%, 89%);
+}
+
+.content h1{
+    font-size: 1.5rem;
+    font-family: Grotesk-extraBold;
+    color:hsl(0, 0%, 100%);
+}
+
+.content p{
+   padding: 0.2rem;
+   margin-top:-1rem;
+}
+.white-card {
+    width:15rem;
+    height: 100%;
+    font-family:Grotesk;
+    border-radius: 0rem 0rem 1.0rem 1.0rem;
+    box-shadow: 0.1rem 0.1rem 1rem hsl(241, 100%, 90%);
+    padding: 1.6rem;
+    margin-top: -1rem;
+    z-index:0;
+}
+.white-card ul {
+    list-style: none;
+
+}
+.white-card ul li{
+    width:14rem;
+    padding:1rem;
+    margin:0rem 0rem 0.8rem -2.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+   
+}
+ul li img{
+    margin-right: 0.5rem;
+}
+.score-per,.score-per1{
+    margin-left:4.5rem;
+    color: black;
+    font-family: Grotesk-bold;
+}
+.score-per1{
+    padding-left: 0.9rem;
+}
+
+.hun{
+    color:hsl(270,5%,71%);
+    margin-left:0.32rem;
+    font-family: Grotesk-bold;
+}
+
+ul li:nth-child(1){
+    background-color: hsl(0, 100%, 98%);
+    color:hsl(0, 100%, 67%);
+}
+ul li:nth-child(2){
+    background-color: hsl(39, 100%, 98%);
+    color: hsl(39, 100%, 56%);
+}
+ul li:nth-child(3){
+    background-color: hsl(166, 100%, 98%);
+    color:hsl(166, 100%, 37%);
+}
+ul li:nth-child(4){
+    background-color: hsl(234, 85%, 98%);
+    color:hsl(234, 85%, 45%);
+}
+button{
+    width:16rem;
+    background-color: hsl(224,30%,27%);
+    color: hsl(0, 0%, 100%);
+    padding:1rem;
+    border-radius: 1.5rem;
+    border:none;
+}
+button:hover{
+    background-color:hsl(234, 85%, 45%);
+}
+
+@media (min-width:768px) and (max-width:1920px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:15rem;
+    }
+    .blue-card{
+        z-index:1;
+        padding: 2.8rem;
+        bottom: 0.5rem;
+    }
+    .white-card{
+        width:16rem;
+        margin-left:-0.5rem;
+        padding: 1.5rem 2.5rem 0rem 3rem;
+        border-radius: 0rem 1.0rem 1.0rem 0rem;
+        box-shadow: 0.1rem 0.1rem 1rem hsl(241, 100%, 90%);
+        z-index:0;
+    }
+    button{
+       margin-bottom: 0.78rem;
+       border-radius:1.5rem;
+    }
+    .content-2{
+        margin-bottom: 2rem;
+    }
+}
